@@ -153,7 +153,7 @@ const Home = () => {
           </Card>
         </GalleryGrid>
       </Container>
-      <Container id={"turbo"}>
+      <Container id="turbo">
         <Title>Turbine sua conexão!</Title>
         <div className="w-full grid lg:grid-cols-2 md:px-[15%] pt-10 pb-20">
           <FlipCard

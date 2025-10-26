@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppBtn from "./components/WhatsApp";
 import Help from "./pages/Help";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         links={[
           { label: "Home", route: "#home" },
           { label: "Planos", route: "#plans" },
+          { label: "Turbine sua conexão", route: "#turbo" },
           { label: "Suporte", route: "help#help" },
         ]}
       />
@@ -49,6 +51,21 @@ function App() {
           },
         ]}
       />
+      <Modal title="Aviso!" labelButton={"Condordo"}>
+        {/* O conteúdo dentro do Modal é passado como 'children'. */}
+        <p className="text-base leading-relaxed text-gray-600">
+          <strong>Atenção:</strong> Este é um site de demonstração desenvolvido
+          exclusivamente para fins de portfólio.
+        </p>
+        <p className="text-base leading-relaxed text-gray-600">
+          Todas as informações, produtos e dados são puramente demonstativos
+          e/ou fictícios. Nenhuma compra, cadastro ou interação realizada aqui
+          terá efeito no mundo real.
+        </p>
+        <p className="text-base leading-relaxed text-gray-600">
+          OBS: Ainda em desenvolvimento.
+        </p>
+      </Modal>
     </div>
   );
 }
