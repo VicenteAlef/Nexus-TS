@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppBtn from "./components/WhatsApp";
+import Help from "./pages/Help";
 
 function App() {
   return (
@@ -14,11 +15,13 @@ function App() {
         logoLink="#home"
         links={[
           { label: "Home", route: "#home" },
-          { label: "Plans", route: "#plans" },
+          { label: "Planos", route: "#plans" },
+          { label: "Suporte", route: "help#help" },
         ]}
       />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/help" element={<Help />} />
       </Routes>
       <Footer
         logo="/logo.png"

@@ -93,11 +93,9 @@ const Footer = ({
         </div>
       </div>
       <div className="text-[10px] md:text-sm text-gray-2S00">
-        Desenvolvido por -
         <a href="https://www.vicentedeveloper.com" target="_blank">
-          Vicente Developer
+          Desenvolvido por Vicente Developer - 2025
         </a>
-        - 2025
       </div>
     </footer>
   );

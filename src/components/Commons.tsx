@@ -3,7 +3,7 @@ export const Container = ({
   id,
 }: {
   children: React.ReactNode;
-  id: string;
+  id?: string;
 }) => {
   return (
     <section
