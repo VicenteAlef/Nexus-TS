@@ -17,9 +17,9 @@ const Home = () => {
             <HashLink
               smooth
               to="/#plans"
-              className="text-4xl lg:text-8xl py-2 px-5 border-5 border-blue-700 rounded-full text-blue-700 bg-white shadow-xl sm:mt-10 hover:scale-110 duration-500 ease-in-out cursor-pointer"
+              className="text-4xl lg:text-8xl py-2 px-5 border-5 border-[#0079bb] rounded-full text-[#0079bb] bg-white shadow-xl sm:mt-10 hover:scale-110 duration-500 ease-in-out cursor-pointer"
             >
-              R$89,90
+              R$79,90
             </HashLink>
           </div>
         </div>
@@ -69,53 +69,55 @@ const Home = () => {
         <Title>Conheça nossos Planos</Title>
         <GalleryGrid>
           <Card>
-            <div className="text-6xl text-center uppercase font-bold text-blue-700 mb-10">
-              400 Mega
+            <div className="text-6xl text-center uppercase font-bold text-[#0081cc] mb-10">
+              500 Mega
             </div>
             <div className="text-center text-2xl text-gray-600 font-bold">
-              R$ 109,90
+              De R$ 99,90 por:
             </div>
-            <div className="text-center text-5xl font-bold text-blue-700">
-              R$ 89,90*
+            <div className="text-center text-5xl font-bold text-[#0079bb]">
+              R$ 79,90*
             </div>
             <div className="text-[11px] mt-5 text-blue-950">
               *Desconto de pontualidade
             </div>
           </Card>
           <Card>
-            <div className="text-6xl text-center uppercase font-bold text-blue-700 mb-5">
-              600 Mega
+            <div className="text-6xl text-center uppercase font-bold text-[#0081cc] mb-5">
+              700 Mega
             </div>
             <div className="text-center text-2xl text-gray-600 font-bold">
-              R$ 129,90
+              De R$ 129,90 por:
             </div>
-            <div className="text-center text-4xl font-bold text-blue-700">
+            <div className="text-center text-4xl font-bold text-[#0079bb]">
               R$ 109,90*
             </div>
             <div className="text-[11px] mt-5 text-blue-950">
               *Desconto de pontualidade
             </div>
-            <div className="w-[150px] h-[3px] bg-blue-100 my-5"></div>
-            <div className="text-2xl text-blue-950">Benefícios:</div>
+            <div className="w-[150px] h-[3px] bg-blue-100 my-3"></div>
+            <div className="text-2xl text-blue-950">Beneficios:</div>
             <ul className="text-sm list-disc">
               <li>Watch TV</li>
+              <li>HBO Max</li>
+              <li>Wifi 6</li>
             </ul>
           </Card>
           <Card>
-            <div className="text-6xl text-center uppercase font-bold text-blue-700 mb-5">
+            <div className="text-6xl text-center uppercase font-bold text-[#0081cc] mb-5">
               1 Giga
             </div>
             <div className="text-center text-2xl text-gray-600 font-bold">
-              R$ 179,90
+              De R$ 179,90 por:
             </div>
-            <div className="text-center text-4xl font-bold text-blue-700">
+            <div className="text-center text-4xl font-bold text-[#0079bb]">
               R$ 159,90*
             </div>
             <div className="text-[11px] mt-5 text-blue-950">
               *Desconto de pontualidade
             </div>
             <div className="w-[150px] h-[3px] bg-blue-100 my-5"></div>
-            <div className="text-3xl text-blue-950">Benefícios:</div>
+            <div className="text-3xl text-blue-950">Beneficios:</div>
             <ul className="text-sm list-disc">
               <li>Roteador Mesh</li>
               <li>Watch TV</li>
@@ -124,23 +126,25 @@ const Home = () => {
             </ul>
           </Card>
           <Card>
-            <div className="text-4xl text-center uppercase font-bold text-blue-700 mb-2">
+            <div className="text-4xl text-center uppercase font-bold text-[#0081cc] mb-2">
               1 Giga Premium
             </div>
             <div className="text-center text-2xl text-gray-600 font-bold">
-              R$ 249,90
+              De R$ 249,90 por:
             </div>
-            <div className="text-center text-4xl font-bold text-blue-700">
+            <div className="text-center text-4xl font-bold text-[#0079bb]">
               R$ 229,90*
             </div>
             <div className="text-[11px] mt-1 text-blue-950">
               *Desconto de pontualidade
             </div>
             <div className="w-[150px] h-[3px] bg-blue-100 my-2"></div>
-            <div className="text-3xl text-blue-950">Benefícios:</div>
+            <div className="text-3xl text-blue-950">Beneficios:</div>
             <ul className="text-sm list-disc">
               <li>Roteador Mesh</li>
-              <li>Fonte Nobreak</li>
+              <li>Font Nobreak</li>
+              <li>Ping Optimizer</li>
+              <li>YouTube Premium</li>
               <li>HBO MAX</li>
               <li>Watch TV</li>
               <li>Wifi 6</li>
