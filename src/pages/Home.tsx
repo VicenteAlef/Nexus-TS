@@ -1,6 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import Carousel from "../components/Carousel";
 import { Card, Container, GalleryGrid, Title } from "../components/Commons";
+import FlipCard from "../components/FlipCard";
 
 const Home = () => {
   return (
@@ -151,6 +152,90 @@ const Home = () => {
             </ul>
           </Card>
         </GalleryGrid>
+      </Container>
+      <Container id={"turbo"}>
+        <Title>Turbine sua conexão!</Title>
+        <div className="w-full grid lg:grid-cols-2 md:px-[15%] pt-10 pb-20">
+          <FlipCard
+            title={"Amplie sua rede com Wifi Mesh"}
+            face={
+              <div className="flex flex-col items-center justify-center gap-10">
+                <img src="./assets/F6600P-1.png" alt="" />
+              </div>
+            }
+            back={
+              <div className="flex flex-col text-white sm:px-20 gap-2">
+                <h3 className=" text-2xl md:text-3xl font-bold mb-2">
+                  Descubra os Benefícios da Rede Wi-Fi Mesh
+                </h3>
+                <p>
+                  Você já se frustrou com o sinal fraco de internet em certos
+                  cômodos da sua casa? Com a tecnologia{" "}
+                  <strong>Wi-Fi Mesh</strong>, esse problema fica no passado!
+                </p>
+                <p>
+                  Diferente dos roteadores tradicionais, que distribuem o sinal
+                  a partir de um único ponto, o sistema Mesh utiliza vários
+                  dispositivos interligados que trabalham juntos para espalhar o
+                  sinal por todos os ambientes. Isso garante cobertura completa,
+                  conexão estável e velocidade consistente em todos os cantos da
+                  sua casa ou empresa.
+                </p>
+                <div className="w-full flex justify-center">
+                  <a
+                    href="https://wa.me/5561999999999?text=Ol%C3%A1%2C+gostaria+de+contratar+o+roteador+Mesh."
+                    target="_blank"
+                    className="mt-5 px-4 py-2 bg-blue-400 text-white font-bold rounded-xl hover:bg-blue-300 transition cursor-pointer"
+                  >
+                    Contratar Mesh
+                  </a>
+                </div>
+              </div>
+            }
+          />
+          <FlipCard
+            title={"Amplie sua rede com Wifi Mesh"}
+            face={
+              <div className="h-full flex flex-col items-center justify-center gap-10">
+                <img
+                  src="./assets/nobreak.png"
+                  alt=""
+                  className="w-50 sm:w-85"
+                />
+              </div>
+            }
+            back={
+              <div className="flex flex-col text-white sm:px-20 gap-2">
+                <h3 className=" text-2xl md:text-3xl font-bold mb-2">
+                  Tenha conexão mesmo sem energia
+                </h3>
+                <p>
+                  No mundo de hoje, sua casa e seu trabalho dependem de uma
+                  conexão constante. Então, por que deixá-la vulnerável ao
+                  primeiro sinal de instabilidade elétrica? Eleve o nível da sua
+                  infraestrutura doméstica com a <strong>fonte nobreak</strong>.
+                </p>
+                <p>
+                  Esqueça os nobreaks grandes e barulhentos. Este é um sistema
+                  de energia ininterrupta (UPS) em miniatura, projetado
+                  especificamente para manter o coração da sua rede — seu
+                  roteador e modem — pulsando durante quedas de energia. Garanta
+                  um ecossistema digital resiliente, onde sua conexão não é um
+                  ponto de falha, mas sim uma certeza.
+                </p>
+                <div className="w-full flex justify-center">
+                  <a
+                    href="https://wa.me/5561999999999?text=Ol%C3%A1%2C+gostaria+de+contratar+a+fonte+Nobreak."
+                    target="_blank"
+                    className="mt-5 px-4 py-2 bg-blue-400 text-white font-bold rounded-xl hover:bg-blue-300 transition cursor-pointer"
+                  >
+                    Contratar Fonte Nobreak
+                  </a>
+                </div>
+              </div>
+            }
+          />
+        </div>
       </Container>
     </>
   );

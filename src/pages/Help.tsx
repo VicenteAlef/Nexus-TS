@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Accordion from "../components/Accordion";
-import { Container } from "../components/Commons";
 import { type AccordionItemProps } from "../components/AccordionItem";
 
 import {
@@ -8,6 +7,7 @@ import {
   faqsItemsFinanceiro,
   faqsItemsJuridico,
 } from "../utils/faqs";
+import FadeIn from "../components/FadeIn";
 
 type TabKey = "suporte" | "financeiro" | "juridico";
 
@@ -33,8 +33,11 @@ const Help = () => {
 
   return (
     <>
-      <Container id="#help">
-        <div className="flex flex-col items-center p-4 min-h-[80vh]" id="help">
+      <FadeIn>
+        <div
+          className="flex flex-col items-center py-10 px-3 min-h-[80vh]"
+          id="help"
+        >
           <h1 className="text-3xl font-bold mb-6 text-gray-800">
             Perguntas Frequentes
           </h1>
@@ -72,7 +75,7 @@ const Help = () => {
             )}
           </div>
         </div>
-      </Container>
+      </FadeIn>
     </>
   );
 };

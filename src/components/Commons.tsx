@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 export const Container = ({
   children,
   id,
@@ -47,8 +49,10 @@ export const GalleryGrid = ({ children }: { children: React.ReactNode }) => {
 
 export const Card = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="w-[280px] h-[420px] flex flex-col items-center justify-center bg-white border-4 border-[#0081cc] p-5 rounded-xl shadow-[0_15px_15px_#00000050] hover:scale-110 duration-500 ease-in-out hover:shadow-[0_20px_20px_#00000050] cursor-default">
-      {children}
-    </div>
+    <FadeIn>
+      <div className="w-[280px] h-[420px] flex flex-col items-center justify-center bg-white border-4 border-[#0081cc] p-5 rounded-xl shadow-[0_15px_15px_#00000050] hover:scale-110 duration-500 ease-in-out hover:shadow-[0_20px_20px_#00000050] cursor-default">
+        {children}
+      </div>
+    </FadeIn>
   );
 };
