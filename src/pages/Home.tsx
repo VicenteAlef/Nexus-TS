@@ -1,6 +1,12 @@
 import { HashLink } from "react-router-hash-link";
 import Carousel from "../components/Carousel";
-import { Card, Container, GalleryGrid, Title } from "../components/Commons";
+import {
+  Card,
+  Container,
+  ContainerFull,
+  GalleryGrid,
+  Title,
+} from "../components/Commons";
 import FlipCard from "../components/FlipCard";
 
 const Home = () => {
@@ -9,25 +15,25 @@ const Home = () => {
       <Carousel>
         <div
           id="home"
-          className="flex items-center justify-center w-full h-[680px] bg-[url('/assets/image1alt.png')] sm:bg-[url('/assets/image1.png')] bg-cover bg-center sm:bg-right  text-white font-bold"
+          className="flex items-center justify-center w-full h-[580px] lg:h-[500px] 2xl:h-[700px] bg-[url('/assets/image1alt.png')] sm:bg-[url('/assets/image1.png')] bg-cover bg-center sm:bg-right  text-white font-bold"
         >
-          <div className="flex items-center justify-start sm:justify-center relative sm:right-30 w-[90%] lg:w-full h-full font-bold flex flex-col text-shadow-lg gap-2 uppercase mt-40 sm:mt-0">
-            <div className="text-center text-5xl lg:text-8xl">
+          <div className="flex items-center justify-start sm:justify-center relative sm:right-30 w-[90%] lg:w-full h-full font-bold flex flex-col text-shadow-lg gap-2 uppercase mt-40 mt-0">
+            <div className="text-center text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl">
               Planos a partir de
             </div>
             <HashLink
               smooth
               to="/#plans"
-              className="text-4xl lg:text-8xl py-2 px-5 border-5 border-[#0079bb] rounded-full text-[#0079bb] bg-white shadow-xl sm:mt-10 hover:scale-110 duration-500 ease-in-out cursor-pointer"
+              className="text-4xl lg:text-6xl 2xl:text-8xl py-2 px-5 border-5 border-[#0079bb] rounded-full text-[#0079bb] bg-white shadow-xl sm:mt-10 hover:scale-110 duration-500 ease-in-out cursor-pointer"
             >
               R$79,90
             </HashLink>
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-full h-[680px] bg-[url('/assets/image2alt.png')] sm:bg-[url('/assets/image2.png')] bg-cover bg-center sm:bg-[position:34%] lg:bg-center h-[680px]  text-white text-6xl font-bold relative">
+        <div className="flex items-center justify-center w-full h-[580px] lg:h-[500px] 2xl:h-[700px] bg-[url('/assets/image2alt.png')] sm:bg-[url('/assets/image2.png')] bg-cover bg-center sm:bg-[position:34%] lg:bg-center text-white text-6xl font-bold relative">
           <div className="flex flex-col items-center sm:justify-center w-[200px] lg:w-full h-full font-bold lg:m-auto gap-2 mt-50 sm:mt-0">
-            <div className="text-6xl lg:text-[90px] uppercase text-shadow-lg absolute sm:right-1 lg:right-[25%] flex flex-col items-center">
+            <div className="text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl uppercase text-shadow-lg absolute sm:right-1 lg:right-[25%] flex flex-col items-center">
               Baixe o App
               <HashLink
                 smooth
@@ -51,7 +57,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-full h-[680px] bg-[url('/assets/image3alt.png')] sm:bg-[url('/assets/image3.png')] bg-cover bg-center  text-white text-6xl font-bold">
+        <div className="flex items-center justify-center w-full h-[580px] lg:h-[500px] 2xl:h-[700px] bg-[url('/assets/image3alt.png')] sm:bg-[url('/assets/image3.png')] bg-cover bg-center  text-white text-6xl font-bold">
           <div className="w-full h-[100%] flex justify-around items-start pt-20 sm:pt-5">
             <img
               src="/assets/hbo.png"
@@ -66,7 +72,7 @@ const Home = () => {
           </div>
         </div>
       </Carousel>
-      <Container id="plans">
+      <ContainerFull id="plans">
         <Title>Conheça nossos Planos</Title>
         <GalleryGrid>
           <Card>
@@ -152,7 +158,7 @@ const Home = () => {
             </ul>
           </Card>
         </GalleryGrid>
-      </Container>
+      </ContainerFull>
       <Container id="turbo">
         <Title>Turbine sua conexão!</Title>
         <div className="w-full grid lg:grid-cols-2 md:px-[15%] pt-10 pb-20">
@@ -183,7 +189,7 @@ const Home = () => {
                 </p>
                 <div className="w-full flex justify-center">
                   <a
-                    href="https://wa.me/5561999999999?text=Ol%C3%A1%2C+gostaria+de+contratar+o+roteador+Mesh."
+                    href="https://wa.me/5561000000000?text=Ol%C3%A1%2C+gostaria+de+contratar+o+roteador+Mesh."
                     target="_blank"
                     className="mt-5 px-4 py-2 bg-blue-400 text-white font-bold rounded-xl hover:bg-blue-300 transition cursor-pointer"
                   >
@@ -225,7 +231,7 @@ const Home = () => {
                 </p>
                 <div className="w-full flex justify-center">
                   <a
-                    href="https://wa.me/5561999999999?text=Ol%C3%A1%2C+gostaria+de+contratar+a+fonte+Nobreak."
+                    href="https://wa.me/5561000000000?text=Ol%C3%A1%2C+gostaria+de+contratar+a+fonte+Nobreak."
                     target="_blank"
                     className="mt-5 px-4 py-2 bg-blue-400 text-white font-bold rounded-xl hover:bg-blue-300 transition cursor-pointer"
                   >

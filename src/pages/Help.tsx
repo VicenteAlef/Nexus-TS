@@ -2,19 +2,14 @@ import { useState } from "react";
 import Accordion from "../components/Accordion";
 import { type AccordionItemProps } from "../components/AccordionItem";
 
-import {
-  faqsItemsSuporte,
-  faqsItemsFinanceiro,
-  faqsItemsJuridico,
-} from "../utils/faqs";
+import { faqsItemsSuporte, faqsItemsFinanceiro } from "../utils/faqs";
 import FadeIn from "../components/FadeIn";
 
-type TabKey = "suporte" | "financeiro" | "juridico";
+type TabKey = "suporte" | "financeiro";
 
 const faqData: Record<TabKey, AccordionItemProps[]> = {
   suporte: faqsItemsSuporte,
   financeiro: faqsItemsFinanceiro,
-  juridico: faqsItemsJuridico,
 };
 
 const Help = () => {
@@ -55,12 +50,6 @@ const Help = () => {
               onClick={() => setActiveTab("financeiro")}
             >
               Financeiro
-            </button>
-            <button
-              className={getTabClass("juridico")}
-              onClick={() => setActiveTab("juridico")}
-            >
-              Contrato
             </button>
           </div>
 

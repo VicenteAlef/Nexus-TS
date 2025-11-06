@@ -3,7 +3,7 @@ import AccordionItem from "./AccordionItem";
 interface AccordionProps {
   items: {
     question: string;
-    answer: string;
+    answer: string | React.ReactNode;
     label?: string;
     url?: string;
   }[];

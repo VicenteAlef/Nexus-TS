@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export interface AccordionItemProps {
   question: string;
-  answer: string;
+  answer: string | React.ReactNode;
   label?: string;
   url?: string;
 }
@@ -47,7 +47,7 @@ const AccordionItem = ({
           isOpen ? "max-h-screen mt-4" : "max-h-0"
         }`}
       >
-        <p className="text-gray-600 ml-2">{answer}</p>
+        <div className="text-gray-600 ml-2 mb-5">{answer}</div>
         {label && url && (
           <a
             className="text-sm text-blue-700 ml-2 underline"
