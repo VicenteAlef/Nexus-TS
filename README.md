@@ -1,73 +1,93 @@
-# React + TypeScript + Vite
+# Nexus Internet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Nexus** é um site institucional de uma provedora de internet
+fictícia.\
+O projeto foi desenvolvido para fins de portfólio, mas seu **layout e
+design** foram também aplicados em um **site real de cliente**.
 
-Currently, two official plugins are available:
+## Visite o Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Nexus Site](https://nexus.vicentedeveloper.com/)
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## ✨ Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- ⚛️ [React + Vite](https://vitejs.dev/) -- ambiente moderno e rápido
+  para desenvolvimento front-end\
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) -- estilização
+  responsiva e produtiva\
+- 🌐 [React Router DOM](https://reactrouter.com/) -- gerenciamento de
+  rotas SPA\
+- 🔗 [React Router Hash
+  Link](https://www.npmjs.com/package/react-router-hash-link) --
+  navegação suave entre seções\
+- 🎭 [Framer Motion](https://www.framer.com/motion/) -- animações
+  fluidas e elegantes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Estrutura do Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Componentes reutilizáveis**: criados para garantir consistência no
+  design e facilitar manutenção.\
+- **Layout dinâmico**: pensado para fácil adaptação a diferentes
+  provedores e contextos de negócio.\
+- **Responsividade**: otimizado para dispositivos móveis, tablets e
+  desktops.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📸 Demonstração
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+> Inclua aqui prints ou GIFs mostrando o funcionamento do site.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🚀 Como Executar o Projeto
+
+1.  Clone o repositório:
+
+    ```bash
+    git clone https://github.com/seu-usuario/nexus.git
+    cd nexus
+    ```
+
+2.  Instale as dependências:
+
+    ```bash
+    npm install
+    ```
+
+3.  Execute em ambiente de desenvolvimento:
+
+    ```bash
+    npm run dev
+    ```
+
+4.  Para build de produção:
+
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 📌 Observações
+
+- Este projeto é **fictício**, mas sua base foi utilizada em um **site
+  real de um cliente**.\
+- Ele serve como **prova de conceito** para demonstrar domínio em
+  tecnologias modernas de front-end.
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para **fins de estudo e portfólio**.\
+Sinta-se livre para se inspirar e reutilizar trechos conforme
+necessário.
+
+---
+
+💡 Desenvolvido por \[Vicente\] 🚀
